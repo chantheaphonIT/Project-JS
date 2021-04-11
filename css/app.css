@@ -1,0 +1,247 @@
+body {
+    background-image: url(https://res.cloudinary.com/sanitarium/image/fetch/q_auto/https://www.sanitarium.com.au/getmedia%2Fae51f174-984f-4a70-ad3d-3f6b517b6da1%2Ffruits-vegetables-healthy-fats.jpg%3Fwidth%3D1180%26height%3D524%26ext%3D.jpg);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Open Sans;
+    background-color: white;
+}
+
+h1 {
+    text-shadow: 2px 2px;
+}
+
+header {
+    background-color: #6668f3;
+    padding-bottom: 20px;
+    text-align: center;
+    width: 324px;
+    margin-left: -10.5px;
+    margin-top: -32px;
+}
+
+input[type=text],
+input[type=number],
+input[type=date] {
+    background-color: white;
+    padding: 5px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+#add-food {
+    text-align: center;
+    margin-top: 5px;
+}
+
+#search-food input[type=text] {
+    width: 100%;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    box-sizing: border-box;
+    border: 3px solid rgb(50, 6, 248);
+}
+
+#search-food input[type=text]:focus {
+    width: 100%;
+}
+
+button {
+    border-radius: 2px;
+    background-color: #6668f3;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 10px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background: #0b7dda;
+}
+
+#food-list h2 {
+    padding-left: 20px;
+}
+
+#food-list {
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    border-left: 3px solid rgb(48, 48, 51);
+    border-right: 3px solid rgb(48, 48, 51);
+    margin: 10px 0;
+    align-items: center;
+    background: rgb(224, 223, 223);
+    border-radius: 10px;
+    justify-content: space-between;
+    margin-top: auto;
+    padding: 15px;
+}
+
+#box {
+    background: rgb(224, 223, 223);
+    margin-top: auto;
+}
+
+.material-icons {
+    margin-left: 80%;
+}
+
+.delete {
+    border-radius: 50%;
+    background-color: #dc3545;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px 5px;
+    cursor: pointer;
+    float: right;
+}
+
+.delete:hover {
+    background: #da190b;
+}
+
+.edit {
+    color: #131314;
+    font-size: 15px;
+    padding: 0px 3px;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
+
+span {
+    color: black;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#container {
+    margin: auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#form-container {
+    display: none;
+}
+
+#create {
+    text-align: center;
+}
+
+#form-container {
+    background: #fff;
+    padding: 10px;
+    /* border-radius: 7px;
+    box-shadow: 1px 1px 2px #eee; */
+    border: 3px solid rgb(50, 6, 248);
+    margin-bottom: 10px;
+    width: 40%;
+}
+
+.card-container {
+    width: 50%;
+    background-color: #6668f3;
+    box-sizing: border-box;
+    border: 3px solid rgb(50, 6, 248);
+}
+
+.form-container button {
+    border-radius: 2px;
+    background-color: #6668f3;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px 10px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* The actual popup */
+
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    /* margin-left: -80px; */
+}
+
+
+/* Popup arrow */
+
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+
+/* Toggle this class - hide and show the popup */
+
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+input[type='color'] {
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}

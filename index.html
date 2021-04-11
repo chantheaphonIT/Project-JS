@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2021-js-project-1-chantheaphonIT</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+
+
+
+    <div id="container">
+
+        <div id="form-container">
+            <header>
+                <div id="page-banner">
+                    <h1 class="title">FAVORITE <br>FOOD</h1>
+                    <p>Foods for yourself</p>
+
+                </div>
+            </header>
+            <form id="add-food">
+                <input id="add-food-textfield1" type="text" placeholder="Name a food..." />
+                <input id="add-food-textfield2" type="text" placeholder="Feedback of food..." />
+
+                <input id="add-food-textfield3" type="number" placeholder="Price of food..." min="1" max="10" ;/>
+
+                <input id="add-food-textfield4" type="date" /> <input type="color" id="color" />
+                <br>
+
+                <button> SUBMIT </button>
+            </form>
+        </div>
+
+        <div class="card-container">
+            <!-- output here -->
+            <!-- example this code should be create in JavaScript-->
+            <div id="food-list">
+                <h2>Search about food!!!</h2>
+                <form action="" id="search-food">
+                    <input type="text" placeholder="Search food..." />
+                </form>
+                <h2 class="title">Favorite food</h2>
+                <button id="create">Create</button>
+
+                <ul class="popup" onmouseover="mouseOver()" onmouseout="mouseOut()">
+                    <li id="box">
+                        <span class="name">Kary | Good | 2$ | 2021-04-19</span><span class="delete">x</span><span class="edit"><i class="material-icons">&#xe254;</i></span>
+                    </li>
+
+                    <li id="box">
+                        <span class="name">Cha | Bad | 10$ | 2020-04-15</span><span class="delete">x</span><span class="edit"><i class="material-icons">&#xe254;</i></span>
+                    </li>
+                    <li id="box">
+                        <span class="name">Kako | Good | 8$ | 2021-07-15</span><span class="delete">x</span><span class="edit"><i class="material-icons">&#xe254;</i></span>
+                    </li>
+                    <span class="popuptext" id="myPopup">This foods that had oder!!</span>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
